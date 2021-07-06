@@ -24,6 +24,9 @@ font-family: 'Krona One', cursive;
 	max-width: 95%;
 	flex-grow: 1;
 }
+.container {
+	background: white;
+}
 
 header {
 	padding: 7%;
