@@ -1,0 +1,312 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/*
+
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Krona One', cursive;
+
+*/
+
+.logo-container {
+	margin-top: 3%;
+	display: flex;
+}
+
+.logoimg {
+	max-width: 95%;
+	flex-grow: 1;
+}
+
+header {
+	padding: 7%;
+}
+
+h1 {
+	font-size: 2em;
+	flex-grow: 2;
+	padding: 1%;
+	align-items: center;
+}
+
+h2 {
+	background: #ff9266;
+	padding: 3%;
+	font-size: 1.25em;
+}
+
+h3 {
+	background: #6996db;
+	color: white;
+	padding: 1%;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .accordion {
+	font-family: 'Krona One', cursive;
+}
+
+/* h1 {
+	margin: 50px 0 20px 0;
+	line-height: 35px;
+	text-align: center;
+}
+*/
+
+.desktop-menu {
+	display: none;
+}
+
+
+.center, .left, .right {
+	width: 100%;
+	max-width: 1200px;
+}
+
+article, aside {
+	padding: 7%;
+}
+
+article p, aside p {
+	padding: 10px 0;
+	font-size: 1.15em;
+}
+
+h3 {
+	line-height: 20px;
+}
+
+aside ul {
+	 padding: 0px 12%;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px 0;
+	clear: both;
+}
+
+/* *********************************** START Accordion Button Info from w3 schools **************************************/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #f84e08;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+	text-decoration: underline;
+  border: solid;
+  outline: none;
+  transition: 0.4s;
+	font-size: 1.5em;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ff9266;
+	font-weight: bold
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 8%;
+	font-size: 1.25em;
+	line-height: 1.5em;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+/* ***********************************  END Accordion Button Info from w3 schools **************************************/
+
+/* ******************************* START MIN-WIDTH 800 MEDIA QUERY ******************************* */
+
+@media (min-width: 800px) {
+
+
+	header {
+		padding: 3%;
+	}
+
+	.logo-container {
+		position: relative;
+		margin: 0 auto;
+		background: white;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		padding: 1.5%;
+		text-align: left;
+	}
+
+	.left {
+		float: left;
+		width: 50%;
+	}
+
+	.right {
+		float: right;
+		width: 50%;
+	}
+
+	.article-left {
+		float: left;
+		width: 44%;
+	}
+
+	.article-right {
+		float: right;
+		width: 44%;
+	}
+
+	article {
+		padding: 2%;
+	}
+
+	article, aside {
+		font-size: 1.15em;
+	}
+
+	aside {
+		clear:both;
+	}
+
+	aside ul {
+		line-height: 1.5em;
+	}
+
+	.panel {
+		padding: 2.5%;
+		line-height: 2em;
+	}
+
+}
+
+/* ******************************* END min-WIDTH 800 MEDIA QUERY ******************************* */
+
+/* ******************************* START MIN-WIDTH 1050 MEDIA QUERY ******************************* */
+
+@media (min-width: 1050px) {
+
+	.menu {
+		clear: both;
+	}
+	.container {
+		background-color: #a9cbff;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		margin: 0 auto;
+	}
+
+	h3 {
+		padding: 2%;
+	}
+
+	header {
+		margin: 0;
+		height: 140px;
+		padding: 2%;
+		background: white;
+	}
+
+	main {
+		padding-top: 2%;
+		float: left;
+		width: 60%;
+		background: #fdd9ca;
+	}
+
+	aside {
+		float: right;
+		width: 36%;
+		clear: none;
+		padding: 2% 2% 0 2%;
+		background-color: #a9cbff;
+	}
+
+	footer {
+		clear: both;
+	}
+
+	.panel {
+		padding: 2%;
+		line-height: 1.5em;
+	}
+
+}
+/* ******************************* END MIN-WIDTH 1050 MEDIA QUERY ******************************* */
+
+
+/* ******************************* START MIN-WIDTH 1195 MEDIA QUERY ******************************* */
+
+@media (min-width: 1195px) {
+
+	h1 {
+		font-size: 4em;
+	}
+
+	main {
+		width: 66%;
+	}
+
+	aside {
+		width: 30%;
+	}
+
+	.panel {
+		padding: 3%;
+		line-height: 2em;
+	}
+
+}
+
+/* ******************************* END MIN-WIDTH 1195 MEDIA QUERY ******************************* */
+
+/* ******************************* START MIN-WIDTH 1820 MEDIA QUERY ******************************* */
+
+@media (min-width: 1500px) {
+
+
+
+	h1 {
+		font-size: 4.5em;
+	}
+
+	.container {
+		max-width: 1500px;
+		margin: auto;
+	}
+
+}
